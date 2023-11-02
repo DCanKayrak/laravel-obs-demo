@@ -13,7 +13,7 @@ class TeacherController extends Controller
 
     public function fetch(){
         $students = User::all();
-        return DataTables::of($students)
+        return DataTables::s::of($students)
             ->addColumn('nationality_id',function ($data){
                 return $data->nationality_id;
             })

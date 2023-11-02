@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     @yield('head')
+    <script src="{{asset('admin/assets/js/jquery-3.2.1.min.js')}}"></script>
 </head>
 <body>
 
@@ -268,6 +269,29 @@
     <!-- /Page Wrapper -->
 
 </div>
-@yield('scripts')
+<!-- jQuery -->
+<script src="{{asset('admin/assets/js/jquery-3.2.1.min.js')}}"></script>
+
+
+<!-- Bootstrap Core JS -->
+<script src="{{asset('admin/assets/js/bootstrap.bundle.min.js')}}"></script>
+
+<script src="{{asset('admin/assets/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('admin/assets/plugins/datatables/datatables.min.js')}}"></script>
+
+
+<!-- Slimscroll JS -->
+<script src="{{asset('admin/assets/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
+
+<script src="{{asset('admin/assets/plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{asset('admin/assets/plugins/morris/morris.min.js')}}"></script>
+<script src="{{asset('admin/assets/js/chart.morris.js')}}"></script>
+
+
+<!-- Custom JS -->
+<script  src="{{asset('admin/assets/js/script.js')}}"></script>
+
+
+@yield('script')
 </body>
 </html>

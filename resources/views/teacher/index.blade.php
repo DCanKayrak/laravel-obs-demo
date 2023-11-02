@@ -78,7 +78,7 @@
                 <thead>
                 <tr>
                     <th>TC Kimlik</th>
-                    <th>Öğrenci No</th>
+                    <th>Öğrenci Numarası</th>
                     <th>Ad</th>
                     <th>Soyad</th>
                     <th>Vize_1</th>
@@ -110,7 +110,7 @@
             proccessing:false,
             serverSide:false,
             ajax:{
-                url:"{{ route('users.teachers.fetch') }}"
+                url:"{!! route('users.teachers.fetch') !!}"
             },
             columns:[
                 {data:'nationality_id',name:'TC Kimlik'},
@@ -120,7 +120,7 @@
                 {data:'visa_1',name:'Vize_1'},
                 {data:'visa_2',name:'Vize_2'},
                 {data:'final',name:'Final'},
-                {data:'action',name:'action',orderable:false,searchable:false},
+                {data:'action',name:'İşlemler',orderable:false,searchable:false},
             ],
             order:[[1,'asc']]
         });
@@ -129,23 +129,5 @@
 
         }
     </script>
-    <!-- jQuery -->
-    <script src="{{asset('admin/assets/js/jquery-3.6.0.min.js')}}"></script>
-
-    <!-- Bootstrap Core JS -->
-    <script src="{{asset('admin/assets/js/bootstrap.bundle.min.js')}}"></script>
-
-    <!-- Slimscroll JS -->
-    <script src="{{asset('admin/assets/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
-
-    <script src="{{asset('admin/assets/plugins/raphael/raphael.min.js')}}"></script>
-    <script src="{{asset('admin/assets/plugins/morris/morris.min.js')}}"></script>
-    <script src="{{asset('admin/assets/js/chart.morris.js')}}"></script>
-
-    <script src="{{asset('admin/assets/plugins/datatables/jquery.dataTables.min.js')}}"></script>
-    <script src="{{asset('admin/assets/plugins/datatables/datatables.min.js')}}"></script>
-
-    <!-- Custom JS -->
-    <script  src="{{asset('admin/assets/js/script.js')}}"></script>
     <div class="sidebar-overlay"></div>
 @endsection
